@@ -7390,7 +7390,8 @@ START: Header CSS
 }
 
 .testimonial-section-3 {
-  padding-top: 270px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
