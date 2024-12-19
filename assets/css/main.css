@@ -6220,7 +6220,7 @@ START: Header CSS
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
-  height: 375px;
+  height: 100%;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -6231,7 +6231,7 @@ START: Header CSS
   -webkit-filter: saturate(0) contrast(110%);
   filter: saturate(0) contrast(110%);
   width: 100%;
-  height: 80%;
+  height: 95%;
 }
 @media only screen and (max-width: 992px) {
   .team-card .team-member img {
@@ -18233,10 +18233,11 @@ START: Footer CSS
 #teamp{
   
   font-family: var(--bz-ff-p);
-  font-size: 11px;
+  font-size: 16px;
   font-weight: var(--bz-fw-normal);
   color: var(--bz-color-text-body);
-  margin-bottom: 11px;
+  margin-bottom: 5px;
+  padding-top: 5px;
   line-height: 20px;
   color: white;
 
@@ -18484,4 +18485,8 @@ START: Footer CSS
   .al-dawn-content p {
       font-size: 0.95rem; /* Text size for phones */
   }
+}
+.Entities-p{
+  margin: 0 2rem !important;
+  line-height: 2rem !important;
 }
