@@ -1184,3 +1184,36 @@ window.addEventListener("resize", () => {
 $(".hover").mouseleave(function () {
   $(this).removeClass("hover");
 });
+  
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const projectItems = document.querySelectorAll(".project-item");
+
+  // Function to filter items
+  const filterGallery = (filter) => {
+      projectItems.forEach((item) => {
+          if (filter === "all" || item.classList.contains(filter)) {
+              item.classList.add("show");
+          } else {
+              item.classList.remove("show");
+          }
+      });
+  };
+
+  // Add event listeners to buttons
+  filterButtons.forEach((btn) => {
+      btn.addEventListener("click", function () {
+          // Remove active class from all buttons
+          filterButtons.forEach((button) => button.classList.remove("active"));
+          // Add active class to the clicked button
+          this.classList.add("active");
+          // Get the filter value
+          const filter = this.getAttribute("data-filter");
+          // Filter the gallery
+          filterGallery(filter);
+      });
+  });
+
+  // Initialize with "all" filter
+  filterGallery("all");
+});

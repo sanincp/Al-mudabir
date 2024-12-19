@@ -2077,9 +2077,7 @@ ul {
   margin-bottom: 25px;
 }
 
-.mb-30 {
-  margin-bottom: -26px;
-}
+
 
 .mb-35 {
   margin-bottom: 35px;
@@ -3504,7 +3502,7 @@ START: Header CSS
 }
 @media only screen and (max-width: 767px) {
   .header-3 .primary-header-inner {
-    padding: 15px;
+    padding: 12px;
   }
 }
 .header-3 .primary-header-inner .inner-left {
@@ -5033,7 +5031,7 @@ START: Header CSS
 }
 @media only screen and (max-width: 767px) {
   .about-section-4 {
-    padding-bottom: 300px;
+    padding-bottom: 0px;
   }
 }
 .about-section-4 .shapes .shape {
@@ -6233,7 +6231,7 @@ START: Header CSS
   -webkit-filter: saturate(0) contrast(110%);
   filter: saturate(0) contrast(110%);
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 @media only screen and (max-width: 992px) {
   .team-card .team-member img {
@@ -18317,5 +18315,173 @@ START: Footer CSS
   .header .primary-header-inner .header-logo img {
     max-width: 150px;
     margin-left: -4px;
+  }
+}
+/* Filter Button Styles */
+.filter-buttons {
+  margin-bottom: 20px;
+}
+.filter-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  background-color: #cd9e32;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.filter-btn.active {
+  background-color: #cd9e32;
+  color: #fff;
+  border-color: #cd9e32;
+}
+.filter-btn:hover {
+  background-color: #f1c55d;
+  color: #fff;
+  border-color: #f1c55d;
+}
+
+/* Gallery Item Styles */
+.project-item {
+  display: none; /* Hidden by default */
+  transition: all 0.3s ease;
+}
+.project-item.show {
+  display: block; /* Show filtered items */
+}
+/* Team Introduction Section Styling */
+.team-intro-section {
+  padding: 60px 15px; /* Padding top/bottom and side padding for small screens */
+}
+
+/* Headline Styling */
+.team-headline {
+  font-size: 2.5rem; /* Large headline for desktop */
+  font-weight: 700;
+  color: #333333; /* Dark grey for contrast */
+  text-transform: capitalize;
+  position: relative;
+}
+
+.team-headline::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #cd9e32; 
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Description Styling */
+.team-description {
+  font-size: 1.1rem; /* Slightly larger text */
+  color: #555555; /* Subtle grey */
+  line-height: 1.8; /* Good spacing between lines */
+  max-width: 800px; /* Restrict width for better readability */
+  margin: 0 auto; /* Center content */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) { /* Medium screens and below */
+  .team-headline {
+      font-size: 2.2rem; /* Smaller headline */
+  }
+  .team-description {
+      font-size: 1rem; /* Adjust description size */
+  }
+}
+
+@media (max-width: 768px) { /* Small screens (tablets) */
+  .team-headline {
+      font-size: 2rem; /* Smaller headline for tablets */
+  }
+  .team-description {
+      font-size: 0.95rem; /* Smaller description */
+      line-height: 1.6; /* Tighter spacing */
+  }
+}
+
+@media (max-width: 576px) { /* Extra small screens (phones) */
+  .team-headline {
+      font-size: 1.8rem; /* Compact headline */
+  }
+  .team-description {
+      font-size: 0.9rem; /* Smallest font size for small phones */
+      line-height: 1.5;
+  }
+}
+/* Al Mudabbir Dawn Section Styling */
+.al-dawn-section {
+  color: #333; /* Dark grey text for readability */
+  padding: 60px 15px; /* Section padding */
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+}
+
+/* Unique Container Class */
+.al-container {
+  max-width: 900px; /* Restrict max-width for readability */
+  margin: 0 auto; /* Center the container */
+  text-align: justify; /* Justify content */
+}
+
+/* Unique Title Styling */
+.al-dawn-title {
+  font-size: 2.5rem; /* Large, prominent title */
+  font-weight: 700; /* Bold title */
+  color: #cd9e32; /* Highlighted title color */
+  text-align: center; /* Centered */
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.al-dawn-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #cd9e32; /* Accent color line below the title */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Unique Content Styling */
+.al-dawn-content p {
+  font-size: 1.1rem; /* Slightly larger text size */
+  line-height: 1.8; /* Comfortable line spacing */
+  margin-bottom: 20px; /* Spacing between paragraphs */
+  color: #555; /* Softer grey text */
+}
+
+.al-highlight {
+  color: #333; /* Darker for emphasis */
+  font-weight: 600; /* Semi-bold */
+}
+
+.al-quote {
+  font-style: italic;
+  font-weight: 500;
+  color: #cd9e32; /* Accent color for quotes */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .al-dawn-title {
+      font-size: 2rem; /* Smaller title for tablets */
+  }
+
+  .al-dawn-content p {
+      font-size: 1rem; /* Reduce text size for smaller devices */
+  }
+}
+
+@media (max-width: 576px) {
+  .al-dawn-title {
+      font-size: 1.8rem; /* Compact title for phones */
+  }
+
+  .al-dawn-content p {
+      font-size: 0.95rem; /* Text size for phones */
   }
 }
