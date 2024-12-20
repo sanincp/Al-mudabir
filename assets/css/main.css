@@ -3019,22 +3019,22 @@ START: Header CSS
   }
 }
 .header .primary-header-inner .header-logo img {
-  max-width: 150px;
+  max-width: 200px;
   margin-left: 60px;
 }
 @media (max-width: 1399px) {
   .header .primary-header-inner .header-logo img {
-    max-width: 150px;
+    max-width: 200px;
   }
 }
 @media (max-width: 1200px) {
   .header .primary-header-inner .header-logo img {
-    max-width: 150px;
+    max-width: 200px;
   }
 }
 @media only screen and (max-width: 767px) {
   .header .primary-header-inner .header-logo img {
-    max-width: 150px;
+    max-width: 200px;
   }
 }
 .header .primary-header-inner .header-menu-wrap {
@@ -6260,11 +6260,12 @@ START: Header CSS
 }
 .team-card .hover-content-wrap {
   height: 100%;
+  margin-top: 10rem;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 10000;
   position: relative;
 }
 .team-card .hover-content-wrap:before {
@@ -18489,4 +18490,109 @@ START: Footer CSS
 .Entities-p{
   margin: 0 2rem !important;
   line-height: 2rem !important;
+}
+.team-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Team Card Styles */
+.team-card-unique {
+  width: 350px; 
+
+  margin: 0 2rem ;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.team-card-unique img {
+  width: 100%;
+  height: 400px !important;
+  background: #cd9e32;
+  height: auto;
+  display: block;
+}
+
+/* Hover Content Wrap */
+.hover-content-wrap-unique {
+  padding: 15px 20px;
+  padding-bottom: 50px;
+  background: #f7f7f7;
+  color: #333;
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.team-card-unique:hover .hover-content-wrap-unique {
+  max-height: 150px; /* Adjust based on content size */
+}
+
+.title-unique {
+  font-size: 18px;
+  font-weight: bold;
+  color: #cd9e32;
+  margin-bottom: 5px;
+}
+
+.role-unique {
+  font-size: 13px;
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.description-unique {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+.member-card {
+  width: 20%;
+  gap: 5%;
+  border-radius: 4px;
+  background-color: white;
+}
+.member-card a{
+  text-decoration: nome !important;
+}
+.member-description {
+  padding: 10px 10px;
+  display: block;
+}
+
+.member-body img {
+  width: 300px;
+  height: 350px;
+  background: #cd9e32;
+  border-radius: 30px;
+}
+
+.member-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-top: 20px;
+}
+.member-body .name{
+  font-size: 18px;
+  text-decoration: nome !important;
+  font-weight: bold;
+  color: #cd9e32 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.member-body .designation{
+  margin-top: -1rem;
+
+  color: #000000 !important;
+
 }
