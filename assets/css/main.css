@@ -7883,6 +7883,7 @@ START: Blog CSS
     START: Page Header CSS
 ----------------------------------------*/
 .page-header {
+  margin-bottom: 2rem !important;
   background-color: #f3f3f3;
   position: relative;
   z-index: 1;
